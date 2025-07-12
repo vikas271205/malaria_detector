@@ -5,7 +5,7 @@ WORKDIR /app
 
 # Install system dependencies for OpenCV
 RUN apt-get update && \
-    apt-get install -y libglib2.0-0 libgl1-mesa-glx libgthread-2.0-0 && \
+    apt-get install -y libglib2.0-0 libgl1-mesa-glx && \
     rm -rf /var/lib/apt/lists/*
 
 # Copy and install dependencies
