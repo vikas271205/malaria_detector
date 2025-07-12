@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+*.h5
+uploads/
+data/
+
+# Node
+node_modules/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Virtualenv
+venv/
+.env
