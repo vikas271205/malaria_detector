@@ -1,18 +1,43 @@
+# ======================
 # Python
+# ======================
 __pycache__/
 *.pyc
+*.pyo
 *.h5
-uploads/
-data/
+*.keras
 
-# Node
+# ======================
+# Virtual Environments
+# ======================
+.venv/
+venv/
+.env
+
+# ======================
+# Data & Outputs
+# ======================
+data/
+uploads/
+
+# ======================
+# Secrets / Credentials
+# ======================
+.kaggle/
+serviceAccountKey.json
+firebase_key.json
+
+# ======================
+# Node / Frontend
+# ======================
 node_modules/
 build/
 
-# OS
+# ======================
+# OS / Editor
+# ======================
 .DS_Store
 Thumbs.db
+.vscode/
+.idea/
 
-# Virtualenv
-venv/
-.env

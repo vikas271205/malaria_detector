@@ -1,23 +1,14 @@
-# 🦠 Malaria Detector
-
-A web-based deep learning application to detect malaria from cell images.
-
 ## 🧠 Model
-- Trained on parasitized and uninfected cell images
+- Transfer learning with MobileNetV2 (ImageNet pretrained)
+- Input: 224×224 RGB
+- Evaluated on a held-out test set (never used in training)
+
+## 📊 Test-set Performance
 - Accuracy: ~93%
-- TensorFlow GPU acceleration enabled
+- ROC–AUC: ~0.98
+- Recall prioritized for parasitized class
+- Threshold: 0.5 (baseline)
 
-## 🖥 Tech Stack
-- **Backend**: Flask + TensorFlow
-- **Frontend**: React
-- **Model Input**: 64x64 RGB images
-
-## 🧪 How to Run
-
-### Backend
-```bash
-cd backend
-python -m venv venv
-venv\Scripts\activate
-pip install -r requirements.txt
-python app.py
+## ⚠️ Disclaimer
+Educational/research use only. Not for clinical diagnosis.
+Grad-CAM provides weak localization, not clinical evidence.
